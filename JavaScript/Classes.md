@@ -14,6 +14,19 @@ set methodName(value): // takes one argument
 There's other ways to make "smarter get/set", look up when needed
 
 
+Strict Mode:
+
+- Stricter Syntax
+- Better performance
+- Silent errors can be thrown
+
+
+Static keyword:
+
+- Can be called without instantiating their class
+- Cannot be called through a class instance
+
+
 Classes:
 
 ```
@@ -63,6 +76,8 @@ You can also put getters and setters in classes
 
 Class Fields (newer feature, may not work on older browsers):
 
+- Does not require let, const or var before declaring the variable name. You can put # in front of the name to make it a private field
+
 ```
 class User {
 	name = "John"
@@ -70,3 +85,20 @@ class User {
 ```
 
 The name variable is a class field, which you can only use in the class. It does not put it into the class prototype and you can use more complex expressions in the class field like a prompt for example 
+
+
+
+Pros and Cons of using classes:
+
+Pros:
+
+- Easier syntax if you are used to OOP
+- An extra options for object creation
+
+
+Cons:
+
+- Bad for functional progrtamming - but classes can be ignored if that's the goal
+- Not the same as other languages like Java, which uses classes a lot more
+
+
